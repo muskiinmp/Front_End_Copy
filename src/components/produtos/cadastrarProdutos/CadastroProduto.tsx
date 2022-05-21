@@ -191,6 +191,9 @@ function CadastroProduto() {
                     </div>
                    
                     <TextField value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="quantidade" variant="outlined" name="quantidade" margin="normal" label="Quantidade" placeholder="Quantidade em estoque" className="quantidadeProduto" />
+
+                    <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" variant="outlined" name="foto" margin="normal" label="Foto" placeholder="Link da foto do produto" className="quantidadeProduto" />
+
                     <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" variant="outlined" name="preco" required margin="normal" placeholder="Digite o preço do produto" className="precoProduto" />
 
                     <FormControl>

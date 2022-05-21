@@ -26,7 +26,8 @@ function Carrinho() {
         id: 0,
         nome: "",
         descricao: "",
-        quantidade:15,
+        quantidade:0,
+        foto:"",
         preco:0,
         tamanho: '',
     })
@@ -95,6 +96,10 @@ function Carrinho() {
                             </Typography>
 
                             <Typography variant="body2" component="p">
+                                Foto: {produto.foto}
+                            </Typography>
+
+                            <Typography variant="body2" component="p">
                                 Descricao: {produto.descricao}
                             </Typography>
 
@@ -125,7 +130,7 @@ function Carrinho() {
                     <Box className="cardProductButton">
                         <Box mx={1} >
                             <Button onClick={confirmSales} variant="contained" size='small' color="primary" className='botaoCompra'>
-                                Confimar Compra
+                                Confirmar Compra
                             </Button>
                         </Box>
                     </Box>
