@@ -30,6 +30,7 @@ function CadastroProduto() {
         id: 0,
         nome: '',
         quantidade: 0,
+        foto: '',
         preco: 0,
         descricao: '',
         tamanho: '',
