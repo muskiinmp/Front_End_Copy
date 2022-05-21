@@ -58,6 +58,8 @@
     font-size: 25px!important;
     font-weight: 400;
     color: #B6917B!important;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .nomeProduto {
@@ -94,18 +96,20 @@
     border-radius: 3px;
 }
 .categoriaProduto {
-    margin: 50px 0px 0px 0px!important ;
-    width: 300px!important;
+    margin: 45px 0px 0px 37px!important ;
+    width: 209px!important;
+    height: 56px !important;
 }
-.categoriaProdutoTeste{
-    display: flex;
+.subCategoria {
+    margin-left: 37px;
 }
+
 
 .descricaoProduto {
-    width: 64vw;
-    height: 150px;
-
-    margin: 80px 0px 0px 35px!important;
+    margin-left: 35px !important;
+    width: 450px;
+    height: 56px;
+    margin-top: 50px !important;
 
     background: #f1f1f1 !important;
     mix-blend-mode: screen;

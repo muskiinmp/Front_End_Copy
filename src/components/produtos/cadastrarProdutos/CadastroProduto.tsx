@@ -29,7 +29,7 @@ function CadastroProduto() {
     const [produto, setProduto] = useState<Produto>({
         id: 0,
         nome: '',
-        quantidade: 0,
+        quantidade: 1,
         foto: '',
         preco: 0,
         descricao: '',
@@ -214,9 +214,9 @@ function CadastroProduto() {
                                 ))
                             }
                         </Select>
-                        <FormHelperText>Escolha uma categoria para a postagem</FormHelperText>
-                    </FormControl>
-                    <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" placeholder='Máximo de 1000 caracteres' label="Descrição" variant="outlined" name="descricao" margin="normal" className="descricaoProduto" multiline rows={6} maxRows={6} />
+                        <FormHelperText className="subCategoria">Escolha uma categoria para o produto</FormHelperText>
+                    </FormControl>                
+                    <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="loja" placeholder='Nome da Loja' label="Loja" variant="outlined" name="loja" margin="normal" className="descricaoProduto"  />
                         <Button type="submit" variant="contained" className="btnProduto" >
                             Cadastrar
                         </Button>

@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, Typography } from "@material-ui/core";
+import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
@@ -32,26 +32,40 @@ function ListaProduto() {
     getProduto()
   }, [produtos.length])
 
+  const useStyles = makeStyles({
+    root: {
+      maxWidth: 242,
+    },
+    media: {
+      height: 258,
+      width: 242
+    },
+  });
+  const classes = useStyles();
+
   return (
     <>
       {
         produtos.map(produto => (
           <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
-
-                <Typography color="textSecondary" gutterBottom>
-                  Produto
-                </Typography>
-
-                <Typography variant="h5" component="h2">
-                  {produto.nome}<br/>
-                  {produto.descricao}<br/>
-                tamanho: {produto.tamanho}<br/>
-                R$: {produto.preco}
-                </Typography>
-
-              </CardContent>
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media} style={{width:"242px", height:"298px"}}
+                  image={produto.foto}
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                   {produto.nome} 
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                   {produto.descricao}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  R$ {produto.preco}
+                  </Typography>
+                </CardContent>              
 
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >
@@ -73,6 +87,8 @@ function ListaProduto() {
                   </Link>
                 </Box>
               </CardActions>
+
+              </CardActionArea>
 
             </Card>
           </Box>
