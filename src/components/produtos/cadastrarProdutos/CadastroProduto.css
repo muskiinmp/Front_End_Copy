@@ -7,7 +7,7 @@
 
 .caixaProduto {
     width: 70vw;
-    height: 600px;
+    height: 500px;
     margin-bottom: 10vh;
     margin-left: 18vh;
     background: rgba(120, 88, 70, 0.29);
@@ -101,13 +101,13 @@
     height: 56px !important;
 }
 .subCategoria {
-    margin-left: 37px;
+    margin-left: 37px!important;
 }
 
 
 .descricaoProduto {
-    margin-left: 35px !important;
-    width: 450px;
+    margin-left: 53px !important;
+    width: 500px;
     height: 56px;
     margin-top: 50px !important;
 

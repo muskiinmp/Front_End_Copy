@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
@@ -32,19 +32,31 @@ function ListaProduto() {
     getProduto()
   }, [produtos.length])
 
-  const useStyles = makeStyles({
+  const useStyles = makeStyles(theme => ({
     root: {
-      maxWidth: 242,
+        flexGrow: 1,
+        padding: theme.spacing(2),
+        minWidth: 242,
+        minHeight: 258
     },
     media: {
       height: 258,
       width: 242
     },
-  });
+  }))
+  
   const classes = useStyles();
 
   return (
     <>
+     <div className={classes.root}>
+            <Grid
+                container
+                spacing={2}
+                direction="row"
+                justify="flex-start"
+                alignItems="flex-start"
+            >
       {
         produtos.map(produto => (
           <Box m={2} >
@@ -93,6 +105,8 @@ function ListaProduto() {
             </Card>
           </Box>
         ))}
+        </Grid>
+        </div>
     </>
   )
 }
