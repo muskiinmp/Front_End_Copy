@@ -1,19 +1,29 @@
 .containerProduto {
     display: column!important;
-}
-.teste2{
-    display:flex;
+    background-image: url("https://i.imgur.com/rQq9STi.png");
+    background-position: center;
+    height: 100vh;
 }
 
 .caixaProduto {
     width: 70vw;
-    height: 500px;
+    height: 525px;
     margin-bottom: 10vh;
     margin-left: 18vh;
-    background: rgba(120, 88, 70, 0.29);
+    background: rgba(201, 163, 142, 0.7);
     mix-blend-mode: normal;
     border-radius: 10px;
 
+}
+
+.titulosCadastroCategoria{
+    display:flex;
+}
+.titulosCadastroCategoria2{
+    display:flex;
+}
+.titulosCadastroCategoria3{
+    display:flex;
 }
 
 .tituloProduto {
@@ -37,7 +47,7 @@
     line-height: 33px!important;
     text-align: left;
 
-    color: #B6917B;
+    color: #A64208;
 }
 
 .subtituloProduto2 {
@@ -50,14 +60,75 @@
     line-height: 33px!important;
     text-align: center;
 
-    color: #B6917B!important;
+    color: #A64208!important;
 }
+.subtituloProduto3 {
+    padding: 0px 0px 0px 35px!important;
+
+    font-family: 'Jacques Francois'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px!important;
+    line-height: 33px!important;
+    text-align: left;
+    
+    color: #A64208;
+}
+.subtituloProduto4 {
+    padding: 0px 0px 0px 160px!important;
+
+    font-family: 'Jacques Francois'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px!important;
+    line-height: 33px!important;
+    text-align: left;
+
+    color: #A64208;
+}
+.subtituloProduto5 {
+    padding: 0px 0px 0px 245px!important;
+
+    font-family: 'Jacques Francois'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px!important;
+    line-height: 33px!important;
+    text-align: left;
+
+    color: #A64208;
+}
+.subtituloProduto6{
+    padding: 20px 0px 0px 35px!important;
+
+    font-family: 'Jacques Francois'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px!important;
+    line-height: 33px!important;
+    text-align: left;
+
+    color: #A64208;
+}
+.subtituloProduto7{
+    padding: 20px 0px 0px 180px!important;
+
+    font-family: 'Jacques Francois'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px!important;
+    line-height: 33px!important;
+    text-align: left;
+
+    color: #A64208;
+}
+
 .selecaoCategoria{
     font-family: 'Jacques Francois'!important;
     font-style: normal;
     font-size: 25px!important;
     font-weight: 400;
-    color: #B6917B!important;
+    color: #A64208!important;
     margin-left: 50px;
     margin-top: 20px;
 }
@@ -68,7 +139,6 @@
     width: 500px;
 
     background: #f1f1f1 !important;
-    mix-blend-mode: screen;
     border-radius: 3px;
 }
 .tamanhoProduto{
@@ -79,24 +149,30 @@
 .quantidadeProduto {
     width: 209px;
     height: 56px;
-    margin: 50px 30px 0px 35px!important ;
+    margin: 20px 30px 0px 35px!important ;
 
     background: #f1f1f1 !important;
-    mix-blend-mode: screen;
+    border-radius: 3px;
+}
+.fotoProduto {
+    width: 209px;
+    height: 56px;
+    margin: 20px 19px 0px 35px!important ;
+
+    background: #f1f1f1 !important;
     border-radius: 3px;
 }
 
 .precoProduto {
     width: 209px;
     height: 56px;
-    margin: 50px 15px 0px 50px!important ;
+    margin: 20px 15px 0px 62px!important ;
 
     background: #f1f1f1 !important;
-    mix-blend-mode: screen;
     border-radius: 3px;
 }
 .categoriaProduto {
-    margin: 45px 0px 0px 37px!important ;
+    margin: 20px 0px 0px 37px!important ;
     width: 209px!important;
     height: 56px !important;
 }
@@ -105,14 +181,13 @@
 }
 
 
-.descricaoProduto {
+.lojaProduto {
     margin-left: 53px !important;
     width: 500px;
     height: 56px;
-    margin-top: 50px !important;
+    margin-top: 25px !important;
 
     background: #f1f1f1 !important;
-    mix-blend-mode: screen;
     border-radius: 3px;
 }
 

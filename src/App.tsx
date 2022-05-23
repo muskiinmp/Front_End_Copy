@@ -18,10 +18,26 @@ import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto'
 import ListaProduto from './components/produtos/listaProduto/ListaProduto';
 import Contato from './pages/contato/Contato';
 import Carrinho from './components/carrinho/Carrinho'
-
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { purple } from '@material-ui/core/colors';
 
 function App() {
+
+  const theme = createMuiTheme({
+    palette: {
+        
+        primary: {
+            main: '#B6917B'
+          },
+          secondary: {
+            main: '#A64208',
+
+        },
+    },
+  });
+
   return(
+    <ThemeProvider theme={theme}>
     <Provider store={store}>
       <ToastContainer />
       <Router>
@@ -50,6 +66,7 @@ function App() {
         <Footer />
       </Router>
     </Provider>
+    </ThemeProvider>
     );
     
 }

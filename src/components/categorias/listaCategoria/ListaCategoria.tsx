@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, Typography } from '@material-ui/core';
+import { Box, Button, Card, CardActions, CardContent, Grid, Typography } from '@material-ui/core';
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
@@ -30,9 +30,11 @@ function ListaCategoria() {
 
     return (
         <>
+        <div >
+            <Grid className="backgroundTeste">
             {
                 categorias.map((item) => (
-                    <Box m={2} >
+                    <Box className="backgroundTeste" m={2} >
                         <Card variant="outlined">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
@@ -49,14 +51,14 @@ function ListaCategoria() {
                                 <Box display="flex" justifyContent="center" mb={1.5} >
                                     <Link to={`/criarCategoria/${item.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="botaoAtualizar" size='small'>
+                                            <Button variant="contained" className="btnCancelar" size='small'>
                                                 atualizar
                                             </Button>
                                         </Box>
                                     </Link>
                                     <Link to={`/deletar-categoria/${item.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" size='small' className='botaoCancelar'>
+                                            <Button variant="contained" size='small' className='btnCancelar'>
                                                 deletar
                                             </Button>
                                         </Box>
@@ -67,6 +69,8 @@ function ListaCategoria() {
                     </Box>
                 ))
             }
+            </Grid>
+            </div>
         </>
     );
 }

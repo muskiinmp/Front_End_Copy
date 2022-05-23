@@ -106,6 +106,7 @@ function CadastroCategoria() {
 
     return (
         <Grid container className="containerCategoria">
+            <Container>
             <Typography variant="h3" className="tituloCategoria" component="h1" align="center" >Cadastrar Categoria</Typography>
             <form className="caixaCategoria" onSubmit={onSubmit}>
                 <Typography variant="h3" className="subtituloCategoria" component="h3" >Nome Categoria</Typography>
@@ -116,6 +117,7 @@ function CadastroCategoria() {
                     Cadastrar
                 </Button>
             </form>
+            </Container>
         </Grid>
     )
 }

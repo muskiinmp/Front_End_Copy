@@ -21,14 +21,15 @@ export default function BasicMenu() {
 
   return (
     <Box >
-        
+
       <Button
         id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
+        aria-owns={anchorEl ? 'basic-menu' : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        style={{fontFamily: "Jacques Francois", fontSize:'15px', textTransform: 'none', color: 'white' }}
+        onMouseOver={handleClick}
+
+        style={{ fontFamily: "Jacques Francois", fontSize: '15px', textTransform: 'none', color: 'white' }}
         className='bnt-nav'
 
       >
@@ -38,17 +39,16 @@ export default function BasicMenu() {
 
         id="basic-menu"
         anchorEl={anchorEl}
-        open={open}
+        open={Boolean(anchorEl)}
         onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
+        MenuListProps={{ onMouseLeave: handleClose }}
 
       >
         <Link className='text-decoration-none' to='/produtos'>
           <MenuItem
+            className='MuiMenu-paper'
             style={{
-              color: 'black',
+              color: 'white',
               fontFamily: 'serif',
               fontSize: '18px',
             }}
@@ -58,7 +58,7 @@ export default function BasicMenu() {
         <Link className='text-decoration-none' to='/criarProduto'>
           <MenuItem
             style={{
-              color: 'black',
+              color: 'white',
               fontFamily: 'serif',
               fontSize: '18px',
             }}

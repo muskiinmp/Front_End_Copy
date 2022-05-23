@@ -49,6 +49,7 @@ function ListaProduto() {
 
   return (
     <>
+    <div className="backgroundProdutos">
      <div className={classes.root}>
             <Grid
                 container
@@ -59,7 +60,7 @@ function ListaProduto() {
             >
       {
         produtos.map(produto => (
-          <Box m={2} >
+          <Box className="cardProduto" m={2} >
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -68,13 +69,13 @@ function ListaProduto() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                    {produto.nome} 
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px"}}>
                    {produto.descricao}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$ {produto.preco}
                   </Typography>
                 </CardContent>              
@@ -82,21 +83,22 @@ function ListaProduto() {
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >
 
+                  <Link className="text-decoration-none" to={`/criarProduto/${produto.id}`} >
+                    <Box mx={1}>
+                      <Button variant="contained" className="btnAtualizar"color="primary" size='small' >
+                        Atualizar
+                      </Button>
+                    </Box>
+                  </Link>
+
                   <Link className="text-decoration-none" to={`/deletarProduto/${produto.id}`}>
                     <Box mx={1}>
-                      <Button variant="contained" size='small' >
+                      <Button variant="contained" className="btnDeletar" color="secondary" size='small' >
                         Deletar
                       </Button>
                     </Box>
                   </Link>
 
-                  <Link className="text-decoration-none" to={`/criarProduto/${produto.id}`} >
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' >
-                        Atualizar
-                      </Button>
-                    </Box>
-                  </Link>
                 </Box>
               </CardActions>
 
@@ -106,6 +108,7 @@ function ListaProduto() {
           </Box>
         ))}
         </Grid>
+        </div>
         </div>
     </>
   )

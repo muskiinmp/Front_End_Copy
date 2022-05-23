@@ -39,22 +39,22 @@ function Home() {
         </Grid>
         
         <Grid container item className='cardsHome' justifyContent='center' alignContent='center'>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media} style={{width:"242px", height:"298px"}}
-                  image="https://static.wixstatic.com/media/36ee3b_96453415d89146de90effe2a671c30b3~mv2.jpg/v1/fill/w_373,h_559,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_9874_edited_edited_edited.jpg"
+                  image="https://static.wixstatic.com/media/36ee3b_c515b6d718ad4c0cb6da7b07e87e5db8~mv2.jpg/v1/crop/x_172,y_0,w_1963,h_3000/fill/w_219,h_334,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ED5A1967_edited.jpg"
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
-                   Camiseta Vermelha Tecido Sustentável 
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
+                   Camiseta Kolofé 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja N'Goma
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$49,99
                   </Typography>
                 </CardContent>
@@ -63,7 +63,7 @@ function Home() {
           </Grid>
 
 
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -72,13 +72,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Calça Saruel Branca 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja N'Goma
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$49,99
                   </Typography>
                 </CardContent>
@@ -86,7 +86,7 @@ function Home() {
             </Card>
           </Grid>
           
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -95,13 +95,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Cropped Branco listra n'goma
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja N'goma
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$49,99
                   </Typography>
                 </CardContent>
@@ -109,7 +109,7 @@ function Home() {
 
             </Card>
           </Grid>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -118,13 +118,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Camiseta N'Goma unissex 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja N'Goma
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$ 49,99
                   </Typography>
                 </CardContent>
@@ -138,8 +138,8 @@ function Home() {
           </Box>
         </Grid>
 
-          <Grid container item className='testeGrid' justifyContent='center' alignContent='center'>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container item justifyContent='center' alignContent='center'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -148,13 +148,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                    Rasteira 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja Flavia Aranha
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$249,99
                   </Typography>
                 </CardContent>
@@ -163,7 +163,7 @@ function Home() {
           </Grid>
 
 
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -172,13 +172,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Vestido Emilia CO OrgânicoS
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja Flavia Aranha
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$299,99
                   </Typography>
                 </CardContent>
@@ -186,7 +186,7 @@ function Home() {
             </Card>
           </Grid>
           
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -195,13 +195,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Carteira cartucheira 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja King55
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$109,99
                   </Typography>
                 </CardContent>
@@ -209,7 +209,7 @@ function Home() {
 
             </Card>
           </Grid>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -218,13 +218,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Bolsa Transversal Tropicals 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja Insecta Shoes
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$ 219,00
                   </Typography>
                 </CardContent>
@@ -238,7 +238,7 @@ function Home() {
 
       
         <Grid container item className='testeGrid' justifyContent='center' alignContent='center' style={{marginTop:'50px', marginLeft:'5vw', marginBottom:'50px'}}>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -247,13 +247,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                    Calça pipiça estampa Lilium
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja Insecta Shoes
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$279,99
                   </Typography>
                 </CardContent>
@@ -262,7 +262,7 @@ function Home() {
           </Grid>
 
 
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -271,13 +271,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                    Oxford Coprini Preto
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                    Loja Insecta Shoes
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p"  style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                   R$399,99
                   </Typography>
                 </CardContent>
@@ -285,7 +285,7 @@ function Home() {
             </Card>
           </Grid>
           
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container className='cardHome' xs={3} item>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -294,13 +294,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Macaquinho Taíse Cambraia de Linho 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja Flavia Aranha
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$354,99
                   </Typography>
                 </CardContent>
@@ -308,7 +308,7 @@ function Home() {
 
             </Card>
           </Grid>
-          <Grid container xs={3} item className='testeGrid'>
+          <Grid container xs={3} item className='cardHome'>
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -317,13 +317,13 @@ function Home() {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846"}}>
+                  <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
                     Calça Sarja Marinho 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja King55
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
+                  <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"18px",color: "#F27830"}}>
                     R$ 210,00
                   </Typography>
                 </CardContent>

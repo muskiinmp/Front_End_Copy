@@ -28,3 +28,6 @@
 .cardsHome{
     margin-left: 5vw!important;
 }
+.cardHome:hover{
+    transform: scale(0.95);
+}
