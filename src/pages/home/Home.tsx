@@ -96,7 +96,7 @@ function Home() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"jaldi", fontSize:"20px",color: "#785846", fontWeight:"bold"}}>
-                    Cropped Branco listra n'goma
+                    Crooped Branco listra n'goma
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p" style={{fontFamily:"jaldi", fontSize:"px",color: "B6917B"}}>
                     Loja N'goma
